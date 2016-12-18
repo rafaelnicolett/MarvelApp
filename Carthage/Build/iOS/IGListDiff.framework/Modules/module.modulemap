@@ -1,0 +1,6 @@
+framework module IGListDiff {
+  umbrella header "IGListDiff.h"
+
+  export *
+  module * { export * }
+}

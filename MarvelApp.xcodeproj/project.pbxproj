@@ -7,21 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C2CA1171E047DE70024F868 /* IGListDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2CA10F1E047DE70024F868 /* IGListDiff.framework */; };
+		9C2CA1181E047DE70024F868 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2CA1101E047DE70024F868 /* Realm.framework */; };
+		9C2CA1191E047DE70024F868 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2CA1111E047DE70024F868 /* RealmSwift.framework */; };
+		9C2CA11A1E047DE70024F868 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2CA1121E047DE70024F868 /* RxCocoa.framework */; };
+		9C2CA11B1E047DE70024F868 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2CA1131E047DE70024F868 /* RxSwift.framework */; };
+		9C2CA11C1E047DE70024F868 /* Siesta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2CA1141E047DE70024F868 /* Siesta.framework */; };
+		9C2CA11D1E047DE70024F868 /* SiestaUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2CA1151E047DE70024F868 /* SiestaUI.framework */; };
+		9C2CA11E1E047DE70024F868 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2CA1161E047DE70024F868 /* SwiftyJSON.framework */; };
+		9C2CA1201E047E7A0024F868 /* SearchCharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CA11F1E047E7A0024F868 /* SearchCharacterTableViewController.swift */; };
+		9C2CA1221E0482160024F868 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CA1211E0482160024F868 /* CharacterDetailViewController.swift */; };
 		9C5005FE1E04714500772A0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5005FD1E04714500772A0C /* AppDelegate.swift */; };
-		9C5006001E04714500772A0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5005FF1E04714500772A0C /* ViewController.swift */; };
-		9C5006031E04714500772A0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5006011E04714500772A0C /* Main.storyboard */; };
 		9C5006051E04714500772A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5006041E04714500772A0C /* Assets.xcassets */; };
 		9C5006081E04714500772A0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5006061E04714500772A0C /* LaunchScreen.storyboard */; };
+		9C50061E1E04795C00772A0C /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50061C1E04795C00772A0C /* Adapter.swift */; };
+		9C50061F1E04795C00772A0C /* CharacterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50061D1E04795C00772A0C /* CharacterAdapter.swift */; };
+		9C5006221E04797E00772A0C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006211E04797E00772A0C /* DataProvider.swift */; };
+		9C5006261E04799700772A0C /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006231E04799700772A0C /* Credentials.swift */; };
+		9C5006271E04799700772A0C /* MarvelApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006241E04799700772A0C /* MarvelApi.swift */; };
+		9C5006281E04799700772A0C /* MarvelClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006251E04799700772A0C /* MarvelClient.swift */; };
+		9C50062A1E0479DB00772A0C /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006291E0479DB00772A0C /* Appearance.swift */; };
+		9C50062C1E0479EA00772A0C /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50062B1E0479EA00772A0C /* AppRouter.swift */; };
+		9C5006301E047A1F00772A0C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50062D1E047A1F00772A0C /* Character.swift */; };
+		9C5006311E047A1F00772A0C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50062E1E047A1F00772A0C /* Result.swift */; };
+		9C5006321E047A1F00772A0C /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50062F1E047A1F00772A0C /* SearchResults.swift */; };
+		9C5006351E047A4F00772A0C /* RealmCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006341E047A4F00772A0C /* RealmCharacter.swift */; };
+		9C5006371E047A5F00772A0C /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006361E047A5F00772A0C /* StorageController.swift */; };
+		9C5006391E047B7800772A0C /* ModalContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006381E047B7800772A0C /* ModalContainerViewController.swift */; };
+		9C50063B1E047B8300772A0C /* UITableView+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50063A1E047B8300772A0C /* UITableView+Diff.swift */; };
+		9C50063D1E047B9500772A0C /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50063C1E047B9500772A0C /* CharacterTableViewCell.swift */; };
+		9C5006401E047BB500772A0C /* RealmObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50063E1E047BB500772A0C /* RealmObserver.swift */; };
+		9C5006411E047BB500772A0C /* RxRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50063F1E047BB500772A0C /* RxRealm.swift */; };
+		9C5006431E047BC700772A0C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006421E047BC700772A0C /* APIClient.swift */; };
+		9C5006451E047BD200772A0C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006441E047BD200772A0C /* Storage.swift */; };
+		9C5006471E047BF500772A0C /* SearchResultsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006461E047BF500772A0C /* SearchResultsAdapter.swift */; };
+		9C50064A1E047C1200772A0C /* CharacterSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006481E047C1200772A0C /* CharacterSearchViewModel.swift */; };
+		9C50064B1E047C1200772A0C /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5006491E047C1200772A0C /* CharacterViewModel.swift */; };
+		9C50064D1E047C3C00772A0C /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50064C1E047C3C00772A0C /* CharacterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C2CA10F1E047DE70024F868 /* IGListDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListDiff.framework; path = Carthage/Build/iOS/IGListDiff.framework; sourceTree = "<group>"; };
+		9C2CA1101E047DE70024F868 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		9C2CA1111E047DE70024F868 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		9C2CA1121E047DE70024F868 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		9C2CA1131E047DE70024F868 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		9C2CA1141E047DE70024F868 /* Siesta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Siesta.framework; path = Carthage/Build/iOS/Siesta.framework; sourceTree = "<group>"; };
+		9C2CA1151E047DE70024F868 /* SiestaUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SiestaUI.framework; path = Carthage/Build/iOS/SiestaUI.framework; sourceTree = "<group>"; };
+		9C2CA1161E047DE70024F868 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		9C2CA11F1E047E7A0024F868 /* SearchCharacterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCharacterTableViewController.swift; sourceTree = "<group>"; };
+		9C2CA1211E0482160024F868 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		9C2CA1271E048F330024F868 /* CryptoMD5-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CryptoMD5-Bridging-Header.h"; sourceTree = "<group>"; };
 		9C5005FA1E04714500772A0C /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5005FD1E04714500772A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C5005FF1E04714500772A0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C5006021E04714500772A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C5006041E04714500772A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C5006071E04714500772A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C5006091E04714500772A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C50061C1E04795C00772A0C /* Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		9C50061D1E04795C00772A0C /* CharacterAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterAdapter.swift; sourceTree = "<group>"; };
+		9C5006211E04797E00772A0C /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		9C5006231E04799700772A0C /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		9C5006241E04799700772A0C /* MarvelApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelApi.swift; sourceTree = "<group>"; };
+		9C5006251E04799700772A0C /* MarvelClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelClient.swift; sourceTree = "<group>"; };
+		9C5006291E0479DB00772A0C /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		9C50062B1E0479EA00772A0C /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		9C50062D1E047A1F00772A0C /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		9C50062E1E047A1F00772A0C /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		9C50062F1E047A1F00772A0C /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		9C5006341E047A4F00772A0C /* RealmCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCharacter.swift; sourceTree = "<group>"; };
+		9C5006361E047A5F00772A0C /* StorageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
+		9C5006381E047B7800772A0C /* ModalContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalContainerViewController.swift; sourceTree = "<group>"; };
+		9C50063A1E047B8300772A0C /* UITableView+Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Diff.swift"; sourceTree = "<group>"; };
+		9C50063C1E047B9500772A0C /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		9C50063E1E047BB500772A0C /* RealmObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObserver.swift; sourceTree = "<group>"; };
+		9C50063F1E047BB500772A0C /* RxRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRealm.swift; sourceTree = "<group>"; };
+		9C5006421E047BC700772A0C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9C5006441E047BD200772A0C /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		9C5006461E047BF500772A0C /* SearchResultsAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsAdapter.swift; sourceTree = "<group>"; };
+		9C5006481E047C1200772A0C /* CharacterSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSearchViewModel.swift; sourceTree = "<group>"; };
+		9C5006491E047C1200772A0C /* CharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		9C50064C1E047C3C00772A0C /* CharacterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +94,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C2CA1171E047DE70024F868 /* IGListDiff.framework in Frameworks */,
+				9C2CA1181E047DE70024F868 /* Realm.framework in Frameworks */,
+				9C2CA1191E047DE70024F868 /* RealmSwift.framework in Frameworks */,
+				9C2CA11A1E047DE70024F868 /* RxCocoa.framework in Frameworks */,
+				9C2CA11B1E047DE70024F868 /* RxSwift.framework in Frameworks */,
+				9C2CA11C1E047DE70024F868 /* Siesta.framework in Frameworks */,
+				9C2CA11D1E047DE70024F868 /* SiestaUI.framework in Frameworks */,
+				9C2CA11E1E047DE70024F868 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +113,7 @@
 			children = (
 				9C5005FC1E04714500772A0C /* MarvelApp */,
 				9C5005FB1E04714500772A0C /* Products */,
+				9C50064E1E047C6A00772A0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +128,174 @@
 		9C5005FC1E04714500772A0C /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C2CA1271E048F330024F868 /* CryptoMD5-Bridging-Header.h */,
+				9C5006141E0471A200772A0C /* Core */,
+				9C5006131E04719900772A0C /* Appareance */,
+				9C5006121E04719400772A0C /* Resources */,
+				9C5006111E04717100772A0C /* Views */,
+				9C5006101E04716600772A0C /* Controllers */,
+				9C50060F1E04715E00772A0C /* Bootstrap */,
+			);
+			path = MarvelApp;
+			sourceTree = "<group>";
+		};
+		9C50060F1E04715E00772A0C /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				9C50062B1E0479EA00772A0C /* AppRouter.swift */,
 				9C5005FD1E04714500772A0C /* AppDelegate.swift */,
-				9C5005FF1E04714500772A0C /* ViewController.swift */,
-				9C5006011E04714500772A0C /* Main.storyboard */,
+			);
+			name = Bootstrap;
+			sourceTree = "<group>";
+		};
+		9C5006101E04716600772A0C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C5006381E047B7800772A0C /* ModalContainerViewController.swift */,
+				9C50064C1E047C3C00772A0C /* CharacterTableViewController.swift */,
+				9C2CA11F1E047E7A0024F868 /* SearchCharacterTableViewController.swift */,
+				9C2CA1211E0482160024F868 /* CharacterDetailViewController.swift */,
+				9C5006151E0471C300772A0C /* ViewModel */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9C5006111E04717100772A0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C50063C1E047B9500772A0C /* CharacterTableViewCell.swift */,
+				9C50063A1E047B8300772A0C /* UITableView+Diff.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9C5006121E04719400772A0C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9C5006041E04714500772A0C /* Assets.xcassets */,
 				9C5006061E04714500772A0C /* LaunchScreen.storyboard */,
 				9C5006091E04714500772A0C /* Info.plist */,
 			);
-			path = MarvelApp;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9C5006131E04719900772A0C /* Appareance */ = {
+			isa = PBXGroup;
+			children = (
+				9C5006291E0479DB00772A0C /* Appearance.swift */,
+			);
+			name = Appareance;
+			sourceTree = "<group>";
+		};
+		9C5006141E0471A200772A0C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9C50061B1E0471FB00772A0C /* Networking */,
+				9C50061A1E0471F500772A0C /* Storage */,
+				9C5006191E0471F000772A0C /* Models */,
+				9C5006181E0471E700772A0C /* Adapters */,
+				9C5006171E0471DF00772A0C /* Realm+Rx */,
+				9C5006161E0471D400772A0C /* DataProvider */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9C5006151E0471C300772A0C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C5006481E047C1200772A0C /* CharacterSearchViewModel.swift */,
+				9C5006491E047C1200772A0C /* CharacterViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		9C5006161E0471D400772A0C /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				9C5006211E04797E00772A0C /* DataProvider.swift */,
+				9C5006201E04797200772A0C /* Protocols */,
+			);
+			name = DataProvider;
+			sourceTree = "<group>";
+		};
+		9C5006171E0471DF00772A0C /* Realm+Rx */ = {
+			isa = PBXGroup;
+			children = (
+				9C50063E1E047BB500772A0C /* RealmObserver.swift */,
+				9C50063F1E047BB500772A0C /* RxRealm.swift */,
+			);
+			name = "Realm+Rx";
+			sourceTree = "<group>";
+		};
+		9C5006181E0471E700772A0C /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				9C50061C1E04795C00772A0C /* Adapter.swift */,
+				9C50061D1E04795C00772A0C /* CharacterAdapter.swift */,
+				9C5006461E047BF500772A0C /* SearchResultsAdapter.swift */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
+		9C5006191E0471F000772A0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C50062D1E047A1F00772A0C /* Character.swift */,
+				9C50062E1E047A1F00772A0C /* Result.swift */,
+				9C50062F1E047A1F00772A0C /* SearchResults.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9C50061A1E0471F500772A0C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9C5006361E047A5F00772A0C /* StorageController.swift */,
+				9C5006331E047A3C00772A0C /* RealmObjects */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		9C50061B1E0471FB00772A0C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9C5006231E04799700772A0C /* Credentials.swift */,
+				9C5006241E04799700772A0C /* MarvelApi.swift */,
+				9C5006251E04799700772A0C /* MarvelClient.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		9C5006201E04797200772A0C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9C5006441E047BD200772A0C /* Storage.swift */,
+				9C5006421E047BC700772A0C /* APIClient.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		9C5006331E047A3C00772A0C /* RealmObjects */ = {
+			isa = PBXGroup;
+			children = (
+				9C5006341E047A4F00772A0C /* RealmCharacter.swift */,
+			);
+			name = RealmObjects;
+			sourceTree = "<group>";
+		};
+		9C50064E1E047C6A00772A0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C2CA10F1E047DE70024F868 /* IGListDiff.framework */,
+				9C2CA1101E047DE70024F868 /* Realm.framework */,
+				9C2CA1111E047DE70024F868 /* RealmSwift.framework */,
+				9C2CA1121E047DE70024F868 /* RxCocoa.framework */,
+				9C2CA1131E047DE70024F868 /* RxSwift.framework */,
+				9C2CA1141E047DE70024F868 /* Siesta.framework */,
+				9C2CA1151E047DE70024F868 /* SiestaUI.framework */,
+				9C2CA1161E047DE70024F868 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +308,7 @@
 				9C5005F61E04714500772A0C /* Sources */,
 				9C5005F71E04714500772A0C /* Frameworks */,
 				9C5005F81E04714500772A0C /* Resources */,
+				9C2CA1251E04866C0024F868 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -126,33 +361,75 @@
 			files = (
 				9C5006081E04714500772A0C /* LaunchScreen.storyboard in Resources */,
 				9C5006051E04714500772A0C /* Assets.xcassets in Resources */,
-				9C5006031E04714500772A0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C2CA1251E04866C0024F868 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Siesta.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IGListDiff.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SiestaUI.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C5005F61E04714500772A0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C5006001E04714500772A0C /* ViewController.swift in Sources */,
+				9C5006271E04799700772A0C /* MarvelApi.swift in Sources */,
+				9C5006451E047BD200772A0C /* Storage.swift in Sources */,
+				9C50062A1E0479DB00772A0C /* Appearance.swift in Sources */,
+				9C5006301E047A1F00772A0C /* Character.swift in Sources */,
+				9C50063B1E047B8300772A0C /* UITableView+Diff.swift in Sources */,
+				9C5006261E04799700772A0C /* Credentials.swift in Sources */,
+				9C50064D1E047C3C00772A0C /* CharacterTableViewController.swift in Sources */,
+				9C2CA1221E0482160024F868 /* CharacterDetailViewController.swift in Sources */,
+				9C5006321E047A1F00772A0C /* SearchResults.swift in Sources */,
+				9C5006281E04799700772A0C /* MarvelClient.swift in Sources */,
+				9C5006431E047BC700772A0C /* APIClient.swift in Sources */,
+				9C5006351E047A4F00772A0C /* RealmCharacter.swift in Sources */,
+				9C5006311E047A1F00772A0C /* Result.swift in Sources */,
+				9C5006471E047BF500772A0C /* SearchResultsAdapter.swift in Sources */,
+				9C50061E1E04795C00772A0C /* Adapter.swift in Sources */,
+				9C50063D1E047B9500772A0C /* CharacterTableViewCell.swift in Sources */,
+				9C5006221E04797E00772A0C /* DataProvider.swift in Sources */,
+				9C50064B1E047C1200772A0C /* CharacterViewModel.swift in Sources */,
+				9C50064A1E047C1200772A0C /* CharacterSearchViewModel.swift in Sources */,
 				9C5005FE1E04714500772A0C /* AppDelegate.swift in Sources */,
+				9C5006391E047B7800772A0C /* ModalContainerViewController.swift in Sources */,
+				9C50062C1E0479EA00772A0C /* AppRouter.swift in Sources */,
+				9C5006401E047BB500772A0C /* RealmObserver.swift in Sources */,
+				9C50061F1E04795C00772A0C /* CharacterAdapter.swift in Sources */,
+				9C5006371E047A5F00772A0C /* StorageController.swift in Sources */,
+				9C2CA1201E047E7A0024F868 /* SearchCharacterTableViewController.swift in Sources */,
+				9C5006411E047BB500772A0C /* RxRealm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9C5006011E04714500772A0C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C5006021E04714500772A0C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C5006061E04714500772A0C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -260,10 +537,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89J6DNEM9C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MarvelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rafaelnicoleti.MarvelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rafaelnicoleti/Documents/xcode_projects/MarvelApp/MarvelApp/CryptoMD5-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -273,10 +555,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89J6DNEM9C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MarvelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rafaelnicoleti.MarvelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rafaelnicoleti/Documents/xcode_projects/MarvelApp/MarvelApp/CryptoMD5-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +587,7 @@
 				9C50060E1E04714500772A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
