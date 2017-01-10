@@ -1,4 +1,4 @@
-Teste empresa Iterative, comunicação com API da Marvel e aplicado arquitetura MVVM utilizada DataProvider para espelhamento da API com banco de dados.
+Projeto de exemplo iOS com Swift, comunicação com API da Marvel e aplicado arquitetura MVVM utilizada DataProvider para espelhamento da API com banco de dados.
 Utilizei a ferramenta Carthage para gerenciamento das libs, portanto para executar o projeto deve ser feito a instalação da mesma se não tiver, e rodar o seguinte Script dentro da pasta do projeto
 
 carthage update --no-use-binaries --platform iOS
